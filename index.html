@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- =========================================================
+         BASIC PAGE SETUP
+         ========================================================= -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hana Comfort Adult Family Home</title>
+    <meta name="description" content="Hana Comfort Adult Family Home — compassionate, licensed residential care in a home-like setting." />
+
+    <!-- Tailwind CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* =========================================================
+           SMALL CUSTOM CSS
+           ========================================================= */
+        .gradient-hero {
+            background: linear-gradient(90deg, rgba(16,185,129,0.08), rgba(6,95,70,0.04));
+        }
+
+        .focus-ring:focus {
+            outline: 3px solid rgba(16,185,129,0.25);
+            outline-offset: 2px;
+        }
+
+        body {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body class="antialiased text-slate-900 bg-slate-50">
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+<header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold">
+                AF
+            </div>
+            <div>
+                <h1 class="text-xl md:text-2xl font-semibold">Hana Comfort Adult Family Home</h1>
+                <p class="text-sm md:text-base text-slate-500">Comfort • Care • Community</p>
+            </div>
+        </a>
+
+        <!-- Desktop navigation -->
+        <nav id="nav" class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#services" class="hover:underline">Services</a>
+            <a href="#rooms" class="hover:underline">Rooms</a>
+            <a href="#gallery" class="hover:text-emerald-700">Gallery</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+            <a href="tel:+12062268288" class="px-4 py-2 bg-emerald-500 text-white rounded-md">Call Us</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="md:hidden p-2 rounded-md border" aria-expanded="false" aria-controls="mobileMenu">
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+        <div class="px-6 py-4 flex flex-col gap-3">
+            <a href="#about" class="block">About</a>
+            <a href="#services" class="block">Services</a>
+            <a href="#rooms" class="block">Rooms</a>
+            <a href="#gallery" class="block">Gallery</a>
+            <a href="#contact" class="block">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main id="home">
+
+    <!-- =========================================================
+         HERO SECTION
+         ========================================================= -->
+    <section class="gradient-hero">
+        <div class="max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 gap-8 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-extrabold">Welcome to Hana Comfort Adult Family Home</h2>
+
+                <p class="mt-4 text-slate-600">
+                    At Hana Comfort Adult Family Home, we provide a peaceful, family-style environment where comfort,
+                    compassion, and dignity come first. With only four private rooms, each resident receives personalized care,
+                    privacy, and genuine attention.
+                </p>
+
+                <div class="mt-6 flex gap-3">
+                    <a href="#contact" class="px-5 py-3 bg-emerald-500 text-white rounded-md shadow">Schedule a Visit</a>
+                </div>
+
+                <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 text-base text-slate-600">
+                    <li>• Small home (4 residents)</li>
+                    <li>• Licensed caregivers</li>
+                    <li>• Private rooms</li>
+                    <li>• Medication support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         QUICK INFO STRIP
+         ========================================================= -->
+    <section class="bg-white border-t">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <div class="text-sm text-slate-500">Open hours</div>
+                <div class="font-medium">Mon–Sun · 24/7 care available</div>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div>
+                    <div class="text-sm text-slate-500">Licenses</div>
+                    <div class="font-medium">Licensed Residential Care</div>
+                </div>
+
+                <div>
+                    <div class="text-sm text-slate-500">Phone</div>
+                    <a href="tel:+12062268288" class="font-medium">(206) 226-8288</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT SECTION
+         ========================================================= -->
+    <section id="about" class="max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+            <h3 class="text-2xl font-semibold">🌿 Our Mission</h3>
+
+            <p class="mt-4 text-slate-600">
+                At <b>Hana Comfort Adult Family Home</b>, our mission is to provide a warm, peaceful, family-like home
+                where each resident receives personalized attention, respect, and the privacy of their own room.
+                We are committed to fostering independence, dignity, and meaningful connection so every resident feels truly at home.
+            </p>
+
+            <h4 class="mt-6 font-semibold">Why families choose us</h4>
+            <ul class="mt-3 grid sm:grid-cols-2 gap-3 text-slate-600">
+                <li>• Low staff-to-resident ratio</li>
+                <li>• Individualized care plans</li>
+                <li>• Homestyle meals prepared fresh daily</li>
+                <li>• Transportation to appointments</li>
+            </ul>
+        </div>
+
+        <aside class="bg-white p-6 rounded-xl shadow">
+            <h4 class="font-semibold">Care Snapshot</h4>
+            <dl class="mt-4 grid grid-cols-2 gap-4 text-sm text-slate-600">
+                <div>
+                    <dt class="font-medium">Capacity</dt>
+                    <dd>4 residents</dd>
+                </div>
+                <div>
+                    <dt class="font-medium">Caregivers</dt>
+                    <dd>Attentive rotating staff</dd>
+                </div>
+                <div>
+                    <dt class="font-medium">Meals</dt>
+                    <dd>3 home-cooked meals/day</dd>
+                </div>
+                <div>
+                    <dt class="font-medium">Rates</dt>
+                    <dd>Contact for details</dd>
+                </div>
+            </dl>
+
+            <a href="#contact" class="mt-6 inline-block px-4 py-2 bg-emerald-500 text-white rounded-md">
+                Request Info
+            </a>
+        </aside>
+    </section>
+
+    <!-- =========================================================
+         SERVICES SECTION
+         ========================================================= -->
+    <section id="services" class="bg-slate-50 py-12">
+        <div class="max-w-7xl mx-auto px-8">
+            <h3 class="text-2xl font-semibold">🌸 Our Services</h3>
+            <p class="mt-2 text-slate-600">
+                We provide compassionate, 24-hour care in a comfortable home-like setting.
+                Our services are personalized to meet the unique needs of each resident.
+            </p>
+
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h4 class="font-semibold">Assisted Daily Living</h4>
+                    <ul class="mt-2 text-base text-slate-600 list-disc pl-5">
+                        <li>24-hour personalized care and supervision</li>
+                        <li>Help with bathing, dressing, grooming, and mobility</li>
+                        <li>Private, fully furnished rooms</li>
+                        <li>Home-cooked meals and snacks</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h4 class="font-semibold">Medication Management</h4>
+                    <ul class="mt-2 text-base text-slate-600 list-disc pl-5">
+                        <li>Medication reminders and support</li>
+                        <li>Schedule oversight and documentation</li>
+                        <li>Daily monitoring and assistance</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h4 class="font-semibold">Care and Support</h4>
+                    <ul class="mt-2 text-base text-slate-600 list-disc pl-5">
+                        <li>Personalized care plans</li>
+                        <li>Support with daily routines</li>
+                        <li>Encouragement of comfort and dignity</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h4 class="font-semibold">Transportation</h4>
+                    <ul class="mt-2 text-base text-slate-600 list-disc pl-5">
+                        <li>Medical appointments</li>
+                        <li>Local outings</li>
+                        <li>Essential transportation support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         ROOMS SECTION
+         ========================================================= -->
+    <section id="rooms" class="max-w-7xl mx-auto px-8 py-12">
+        <h3 class="text-2xl font-semibold">Rooms & Amenities</h3>
+        <p class="mt-2 text-slate-600">
+            Private rooms are furnished and welcoming, with optional personal touches and family visits encouraged.
+        </p>
+    </section>
+
+    <!-- =========================================================
+         GALLERY SECTION
+         ========================================================= -->
+    <section id="gallery" class="bg-emerald-50 py-20">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold text-emerald-800 mb-12">Photo Gallery</h2>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="images/Front_Door.jpg" alt="Front door" class="rounded-xl shadow-md h-96 w-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="images/Br.jpg" alt="Bedroom area" class="rounded-xl shadow-md h-96 w-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="images/Shower.jpg" alt="Shower area" class="rounded-xl shadow-md h-96 w-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="images/Kitchen.jpg" alt="Kitchen" class="rounded-xl shadow-md h-96 w-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="images/garden.jpg" alt="Outdoor garden" class="rounded-xl shadow-md h-96 w-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="images/Ramp_and_Neigh.jpg" alt="Ramp and neighborhood" class="rounded-xl shadow-md h-96 w-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         LIGHTBOX
+         ========================================================= -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+        <img id="lightbox-img" src="" alt="Expanded Image" class="w-screen h-screen object-contain md:object-cover cursor-zoom-out">
+    </div>
+
+    <!-- =========================================================
+         CONTACT SECTION
+         Formspree version for static site
+         Replace YOUR_FORM_ID with your real Formspree ID
+         ========================================================= -->
+    <section id="contact" class="max-w-4xl mx-auto px-8 py-16">
+        <div class="bg-white p-8 rounded-xl shadow">
+            <h3 class="text-2xl font-semibold">Contact Us</h3>
+            <p class="mt-2 text-slate-600">
+                We’d be glad to answer your questions and help you schedule a visit.
+            </p>
+
+            <form
+                    id="contactForm"
+                    class="mt-6 space-y-4"
+                    action="https://formspree.io/f/xykbydrg"
+                    method="POST"
+            >
+                <!-- Subject line for your email notification -->
+                <input type="hidden" name="_subject" value="New message from Hana Comfort AFH">
+
+                <!-- Redirect after submit -->
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <div>
+                    <label for="name" class="block mb-1 font-medium">Name</label>
+                    <input id="name" name="name" required class="w-full border rounded-md px-4 py-3 focus-ring">
+                </div>
+
+                <div>
+                    <label for="email" class="block mb-1 font-medium">Email</label>
+                    <input id="email" type="email" name="email" required class="w-full border rounded-md px-4 py-3 focus-ring">
+                </div>
+
+                <div>
+                    <label for="phone" class="block mb-1 font-medium">Phone</label>
+                    <input id="phone" name="phone" class="w-full border rounded-md px-4 py-3 focus-ring">
+                </div>
+
+                <div>
+                    <label for="message" class="block mb-1 font-medium">Message</label>
+                    <textarea id="message" name="message" required rows="5" class="w-full border rounded-md px-4 py-3 focus-ring"></textarea>
+                </div>
+
+                <button type="submit" class="px-5 py-3 bg-emerald-500 text-white rounded-md shadow">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-8 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+            <h5 class="font-semibold">Hana Comfort Adult Family Home</h5>
+            <p class="mt-2 text-sm text-slate-600">
+                Licensed residential care in a family-style home. Serving Kent and the surrounding area.
+            </p>
+        </div>
+
+        <div class="text-sm text-slate-600">
+            <div class="font-medium">Quick links</div>
+            <ul class="mt-3 space-y-2">
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#services" class="hover:underline">Services</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="text-sm text-slate-600">
+            <div class="font-medium">Contact</div>
+            <ul class="mt-3 space-y-2">
+                <li><a href="tel:+12062268288" class="hover:underline">(206) 226-8288</a></li>
+                <li><a href="mailto:hcomfortafh@gmail.com" class="hover:underline">hcomfortafh@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center text-xs text-slate-400 py-4">
+        © <span id="year"></span> Hana Comfort Adult Family Home
+    </div>
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT
+     Mobile menu + gallery lightbox + footer year
+     No /contact fetch because Formspree handles the form
+     ========================================================= -->
+<script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Gallery lightbox
+    const galleryImages = document.querySelectorAll('#gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.remove('hidden');
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.add('hidden');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', (e) => {
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
